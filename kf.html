@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 <title>在线客服</title>
+
 <style>
 *{margin:0px;padding:0px}
 body{
@@ -25,8 +26,22 @@ padding:10px
     text-align: center;
     margin-top: 30px;
 ">
-    <span style="color: rgb(89, 89, 89); font-size: 14px;">邮箱 ：qiaokang973@gmail.com</span><br>
+    <span id="email" style="color: rgb(89, 89, 89); font-size: 14px;">邮箱 ：shanhang791@gmail.com</span><br>
 </p>
+<script>
+
+    var u = navigator.userAgent;
+    
+    if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {
+    
+        document.getElementById("email").innerHTML = "邮箱 ：shanhang791@gmail.com";
+        
+    } else if (u.indexOf('iPhone') > -1) {
+    
+        document.getElementById("email").innerHTML = "邮箱 ：qiaokang973@gmail.com";
+    
+    }
+    </script>
 <p class="" data-tools-id="84728">
     <span style="font-size: 14px; color: rgb(63, 63, 63);"><br></span>
 </p>
